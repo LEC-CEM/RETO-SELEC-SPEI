@@ -205,7 +205,7 @@ footer b{color:var(--ink)}
 </footer>
 
 <script>
-var LINKS={reto:"",conferencia:""};
+var LINKS={reto:"https://forms.gle/Vxq3PZWqJtdyy3jK9",conferencia:"https://forms.gle/XKw5Qs7ucXdVxmkW6"};
 document.querySelectorAll("[data-link]").forEach(function(a){var u=LINKS[a.dataset.link];
 if(u){a.href=u;a.target="_blank";a.rel="noopener"}else{a.classList.add("off");a.removeAttribute("href");a.setAttribute("aria-disabled","true");a.textContent+=" (enlace próximamente)"}});
 document.querySelectorAll('nav a').forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var t=document.querySelector(a.getAttribute("href"));if(t)t.scrollIntoView({behavior:"smooth"})})});
